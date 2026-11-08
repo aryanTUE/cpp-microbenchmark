@@ -18,6 +18,12 @@ The purpose of this product is to serve as a latency benchmarking suite for vari
 2. The system MUST be able to separate thread CPU time from real time. So, if the OS pauses the benchmark to run a background process the system should know how to account for this.  
 3. The system MUST ensure that its own internal workings such as timer checks, loop increments consume near-zero CPU cycles.
 
+## Pending Requirements (To do)
+1. FR-3: prevent compiler optimizations from stripping away benchmark logic
+2. FR-8: provide hooks to initialize and clean up data outside of the timed loop
+3. Fix build instructions
+4. Add section for "Why not Google Benchmark"
+
 ## Core Entities
 - Registry: singleton class with a Macro
 - Benchmark: main data container
